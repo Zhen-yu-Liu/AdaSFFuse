@@ -49,8 +49,8 @@ Install pytorch, cuda and cudnn, then install other dependencies via:
     - MIF:[CT-MRI, PET-MRI, SPECT-MRI](https://github.com/xianming-gu/Havard-Medical-Image-Fusion-Datasets)
 
     Please refer to the original dataset websites for more details. You can download the dataset directly for use.
-####################################################################################################################################################################################################################################
-2. <u>We also provide the processed datasets we use here: .</u>
+
+2. <u>We also provide the processed datasets we use here:https://pan.baidu.com/s/1lBKpEL6QoWZSQ4Wp3cGydQ        code：c3kz</u>
 
 3. If you are using your own datasets, please orgnize the dataset folder in the following structure:
     
@@ -159,9 +159,7 @@ It's worth mentioning that if you don't want to start the configuration all over
 2. Preparation of data sets    
 
     **Use VOC format for training, you need to make your own data set before training**. 
-
     Place the label file in the VOCdevkit folder in the VOC2007 folder under Annotations before training.   
-
     Before training, the image files in JPEGImages, JPEGImages_ir and JPEGImages_vis were placed in the VOC2007 folder under the VOCdevkit folder, corresponding to the fusion images, infrared images and visible images.
 
 3. Processing of data sets  
@@ -176,7 +174,6 @@ It's worth mentioning that if you don't want to start the configuration all over
 4. Training  
 
     After modifying the classes_path, you can run train.py to start training, after training multiple epochs, the weights will be generated in the logs folder, note that when training different images, remember to change the folder where the weights and logs are saved. 
-    
     **There are more parameters for training, they are all in train.py, you can read the comments carefully, the most important part is still the classes_path in train.py.**   
 
     ```shell
@@ -186,7 +183,6 @@ It's worth mentioning that if you don't want to start the configuration all over
 5. Anticipate
 
     Inside the yolo.py file, modify model_path and classes_path to correspond to the trained files; 
-    
     **model_path corresponds to the weights file under the logs folder, and classes_path corresponds to the classes in model_path.**   
 
     ```shell
@@ -223,10 +219,9 @@ It's worth mentioning that if you don't want to start the configuration all over
     ```
 
 2. Preparation of data sets  
+
     **Use VOC format for training, you need to make your own data set before training**    
-
     Place the label file in the SegmentationClass in the VOC2007 folder under the VOCdevkit folder before training. 
-
     Place the image files in JPEGImages, JPEGImages_ir and JPEGImages_vis in the VOC2007 folder under the VOCdevkit folder before training. 
 
 
@@ -249,7 +244,6 @@ It's worth mentioning that if you don't want to start the configuration all over
 5. Anticipate
 
     Inside the segformer.py file, change model_path, num_classes, and backbone to correspond to the trained files in the following sections;
-
     **model_path corresponds to the weights file under the logs folder, num_classes represents the number of classes to be predicted plus one, and backbone is the backbone feature extraction network used**
 
     ```shell
