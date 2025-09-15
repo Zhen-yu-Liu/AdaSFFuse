@@ -258,6 +258,9 @@ It's worth mentioning that if you don't want to start the configuration all over
     python get_miou.py
     ```
 
+## Attention 
+To make it easier for you to learn, the location of our network structure is located in /models, and the backbone network is 'network.py'.
+
 ## Contact
 In this regard, our experiments are all complete, if you have any questions, please contact via email 2408085408337@stu.nchu.edu.cn.
 
@@ -272,7 +275,6 @@ If you find this code useful, please consider citing our work:
   year={2025}
 }
 ```
-
 
 
 
